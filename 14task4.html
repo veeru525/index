@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width:1000px;
+            height:1000px;
+            
+            border: 15px solid black ;
+            border-radius: 15px;}
+        .child{
+            border: 20px solid black;
+            border-radius:50%;
+            width:980px;
+            height:980px;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+        .abc{
+            width:20%;
+            height: 20%;
+            border:2px solid black;
+            border-radius:50%;
+            background-color: black;
+            
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div  class="child">
+            <div class="abc"></div>
+            <div class="abc"></div>
+            <div class="abc"></div>
+
+        </div>
+
+    </div>
+</body>
+</html>

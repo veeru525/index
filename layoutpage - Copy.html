@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color:lightcyan;
+            display: flex;
+        }
+        .child1{
+            width: 20%;
+            height: 100%;
+            border: 0px solid black;
+            background-color:darkcyan;
+        }
+        .child2{
+            width: 80%;
+            height: 100%;
+            border: 0px solid black;
+        
+        }
+        .abc1{
+            width: 100%;
+            height: 6%;
+            border: 0px solid black;
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        .abc2{
+            width:100%;
+            height: 40%;
+            border: 0px solid black;
+            display: flex;
+            padding:20px;
+            justify-content: space-around;
+        
+        }
+        .abc3{
+            width:100%;
+            height:56%;
+            border: 0px solid black;
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        
+        }
+        .sub1{
+            width:150px;
+            height:80px;
+            border: 0px solid blue;
+            border-radius:5px;
+        }
+        .sub2{
+            width:150px;
+            height:80px;
+            border: 0px solid blue;
+            border-radius: 5px;
+        }
+        .sub3{
+            width:300px;
+            height:200px;
+            border: 0px solid gray;
+            border-radius: 5px;
+            background-color: blue;
+            color: aliceblue;
+            padding: 8px;
+            
+            
+        }
+        .sub4{
+            width:300px;
+            height:200px;
+            border: 0px solid gray;
+            border-radius: 5px;
+            background-color: green;
+            color: aliceblue;            
+        }
+        .sub5{
+            width:300px;
+            height:200px;
+            border: 0px solid gray;
+            border-radius: 5px;
+            background-color: orangered;
+            color: aliceblue;
+            padding: 5px;
+        }
+        .sub6{
+            width:400px;
+            height:250px;
+            border: 0px solid gray;
+            border-radius: 8px;
+            background-color: white;
+
+        }
+        .sub7{
+            width:400px;
+            height:200px;
+            border: 0px solid gray;
+            border-radius: 8px;
+            background-color: white;
+        }
+        input{
+            background-color: azure;
+            width: 150px;
+            height:30px;
+            
+            border-radius: 3px;
+            border: 0px solid black;
+            text-align: center;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        h2{
+            font-size: 30px;
+            text-align: right;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 200;
+            text-align: right;
+        }
+        label{
+            width:100%;
+            height: 20%;
+        }
+        .a1{
+            width: 100%;
+            height: 12%;
+            background-color: grey;
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        .a2{
+            width:100%;
+            height:88%;
+        }
+        .b1{
+            width: 100%;
+            height: 8%;
+            background-color: grey;
+
+        }
+        .b2{
+            width:100%;
+            height:92%;
+            padding: 10px;
+        }
+        .cmt{
+            display: flex;
+            justify-content: space-between;
+        }
+        .spur{
+            color: aliceblue;
+            font-size: 30px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="spur">
+                <div class="spur">
+                    <img src="https://icon-library.com/images/charge-icon/charge-icon-3.jpg" width="20px" height="20px">
+                    <label>Spur</label>
+                </div>
+                <div class="l1">
+                    <img src="https://image.shutterstock.com/image-vector/home-icon-260nw-656554627.jpg" width="20px" height="15px">
+                    <label>Dashboard</label>
+                </div>
+                <div class="l2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPRT8fdTMYgznBDUZGPr6l_2SO0X5E50s_g&usqp=CAU" width="20px" height="15px">
+                    <label>Charts</label>
+                </div>
+                <div class="l3">
+                    <img src="data:image/png;base64,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" width="20px" height="15px">
+                    <label>Components</label>
+                </div>
+                <div class="l4">
+                    <img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-file-icon-image_1128287.jpg" width="20px" height="15px">
+                    <label>Layout</label>
+                </div>
+                <div class="l5">
+                    <img src="https://image.shutterstock.com/image-vector/home-icon-260nw-656554627.jpg" width="20px" height="15px">
+                    <label>About</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="child2">
+            <div class="abc1">
+                <div class="sub1">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="sub2">
+                    <input type="Signout" placeholder="Signout">
+                </div>
+            </div>
+            <div class="abc2">
+                <div class="sub3">
+                    <h1>Signups</h1>
+                    
+                    
+                    <img src="https://cdn0.iconfinder.com/data/icons/avatar-2/500/man-2-512.png" width="30px"height="30px">
+                    <h2>144</h2>
+                    <p><b>+25%</b>from last month </p>
+                </div>
+                <div class="sub4">
+                    <h1>Revenue</h1>
+                    <img src="https://cdn0.iconfinder.com/data/icons/avatar-2/500/man-2-512.png" width="30px"height="30px"" width="10px"height="10">
+                    <h2>$25,541</h2>
+                    <p><b>+17.5%</b>from last month </p>
+                </div>
+                <div class="sub5">
+                    <h1>Open tickets</h1>
+                    <img src="https://cdn0.iconfinder.com/data/icons/avatar-2/500/man-2-512.png" width="30px"height="30px"" width="10px"height="10">
+                    <h2>5</h2>
+                
+                </div>
+            </div>
+            <div class="abc3">
+                <div class="sub6">
+                    <div class="a1">
+                        <label>Bar chart </label>
+                        <select>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="a2">
+                        <img src="https://www.metabase.com/learn/images/master-the-bar-chart-visualization/bar-chart.png" width="100%"height="100%">
+                    </div>
+
+                </div>
+                <div class="sub7">
+                    <div class="b1">
+                        <label>Notification</label>
+                    </div>
+                    <div class="b2">
+                        <div class="cmt">
+                            <pre>New comment </pre>
+                            <pre>21 days ago</pre>
+                        </div>
+                        <div class="cmt">
+                            <pre>New comment </pre>
+                            <pre>21 days ago</pre>
+                        </div>
+                        <div class="cmt">
+                            <pre>New comment </pre>
+                            <pre>21 days ago</pre>
+                        </div>
+                        
+                        <label><ins>Show all</ins></label>
+            </div>
+                </div>  
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

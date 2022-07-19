@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color:lightgray;
+            display: flex;
+        }
+        .child1{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .child2{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            font-size: 60px;
+            font-weight: bold;
+            
+        }
+        .paragraph1{
+            color:black;
+            font-size: 25px;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            box-shadow: 5px 5px 3px black;
+            background-color: aliceblue;
+            width:280px
+            height:300px;
+            text-align: center;
+            padding:20px;
+            border-radius:10px;
+            
+        }
+        input{
+            width:280px;
+            height:30px;
+            border-radius: 3px;
+            color:transparent;
+        }
+        .blue{
+            width:280px;
+            height:35px;
+            background-color: blue;
+            border-radius: 5px;
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .green{
+            width:180px;
+            height:35px;
+            background-color:lawngreen;
+            border-radius: 5px;
+            color: aliceblue;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .para1{
+            color: lightskyblue;
+            font-weight: 500;
+        }
+        .para2{
+            color:black;
+            font-weight:200;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:15px;
+        }
+        b{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+           <div>
+            <h1 class="heading">Facebook</h1>
+            
+            
+            <p class="paragraph1">Facebook helps  you connect and share<br>
+             with the people in life</p>
+            </div>
+        </div>
+        <div class="child2">
+            <div>
+            <form>
+                <input type="text" placeholder=" Email address or phone number">
+                <br>
+                <br>
+                <input type="password" placeholder="password">
+                <br>
+                <br>
+                <button class="blue">Log In</button>
+                <br>
+                <p class="para1">Forgotten password?</p>    
+                <hr>
+                <br>
+                <button class="green">Create new account</button>
+            </form>
+                <br>
+        
+                <p class="para2"><b>Create a page </b> for a celebrity,Brand or business</p>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
